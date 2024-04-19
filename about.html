@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="port.css">
+  <style>
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 400px;
+      position: relative;
+      margin: auto;
+      float:left;
+    }
+    
+    /* Slides */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Container paragraph */
+    .container {
+      margin-left: 200px;
+      padding: 20px;
+      background-color: #f1f1f1;
+      color:black;
+      float:right;
+    }
+    form{
+      margin:10%;
+    }
+  </style>
+</head>
+<body>
+  
+      <header>
+      
+
+        <div class="logo">
+
+          <img src="5.jpg">
+          <h1>MY PORTFOLIO</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+<form>
+<div class="slideshow-container">
+  <div class="mySlides">
+    <img src="00.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="3.jpg" style="width:100%">
+  </div>
+</div>
+
+<div class="container">
+  <p>Hi there! My name is Irish Joy Langaoan and I'm a student. I'm currently pursuing BS in Information Technology at University of the Cordilleras. I have a passion for learning and exploring new areas of knowledge.</p>
+
+<p>I enjoy studying subjects like Project Management, Web Application Development, and Data Mining. These subjects fascinate me because they allow me to understand the world from different perspectives and develop critical thinking skills.</p>
+
+<p>Aside from academics, I have a variety of interests and hobbies. I love watching movies and series in different genres, listening to podcast stories, and online games like PUBG. These activities help me relax and unwind, and they also provide me with opportunities to meet new people and learn new things.</p>
+
+<p>During my free time, you can find me wandering around the beautiful city of Baguio, or at home doing household chores. I believe in maintaining a healthy work-life balance and making the most out of every moment.</p>
+
+<p>Thank you for visiting my page. If you have any questions or would like to connect, feel free to reach out to me. I'm always open to new opportunities and collaborations. Let's learn and grow together!</p>
+</div>
+</form>
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+</script>
+
+</body>
+</html>

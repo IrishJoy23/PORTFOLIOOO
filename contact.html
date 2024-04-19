@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="port.css">
+  <style>
+    /* Contact section styles */
+    .contact-section {
+      max-width: 1000px;
+      max-height: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 50px;
+    }
+    .contact-section h2{
+      color:black;
+    }
+    
+    .contact-info {
+      margin-bottom: 10px;
+    }
+    
+    .contact-info label {
+      font-weight: bold;
+      color:black;
+    }
+    
+    .contact-info span {
+      margin-left: 10px;
+      color:black;
+    }
+    
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .contact-form button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+
+        <div class="logo">
+
+          <img src="5.jpg">
+          <h2>MY PORTFOLIO</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+<div class="contact-section">
+  <h2>Contact Us</h2>
+  
+  <div class="contact-info">
+    <label>Name:</label>
+    <span>Irish Yoj Langaoan</span>
+  </div>
+  
+  <div class="contact-info">
+    <label>Email:</label>
+    <span>your_email@example.com</span>
+  </div>
+  
+  <div class="contact-info">
+    <label>Phone:</label>
+    <span>+1234567890</span>
+  </div>
+  
+  <form class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="email" name="email" placeholder="Your Email" required><br>
+    <textarea name="message" placeholder="Your Message" required></textarea><br>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+</body>
+</html>
